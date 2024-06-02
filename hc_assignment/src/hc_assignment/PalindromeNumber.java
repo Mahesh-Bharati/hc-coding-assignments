@@ -35,7 +35,7 @@ public class PalindromeNumber {
 			System.out.println("Enter the "+i+"th Element");
 			arr[i]=sc.nextInt();
 		}
-		List<Integer> list = new ArrayList();
+		List<Integer> list = new ArrayList<Integer>();
 		for(int n : arr)
 		{
 			if(checkPalindrom(n))
