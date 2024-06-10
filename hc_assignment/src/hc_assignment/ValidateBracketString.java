@@ -20,6 +20,11 @@ public class ValidateBracketString {
 			else if(str.charAt(i)==')' || str.charAt(i)=='}' || str.charAt(i)==']')
 			{
 				int l = list.size();
+				if(l==0)
+				{
+					flag=false;
+					return flag;
+				}
 				char ch = list.get(l-1);
 				if(ch=='(' && str.charAt(i)==')')
 				{
